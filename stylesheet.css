@@ -1,0 +1,312 @@
+/* General Styles */
+:root {
+    --primary-color: #001f3f;
+    --secondary-color: #f0f0f0;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* ... */
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover,
+header .navbar a.active {
+    color: #f4a261;
+}
+
+main {
+    margin-top: 80px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-image {
+    float: right;
+    margin: 20px;
+}
+
+.home-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid cyan;
+    object-fit: cover;
+}
+section .education-items,
+section .skills-container,
+section .project-items,
+section .responsibility-items,
+section .achievement-items,
+section .certificate-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section .education-item,
+section .project-item,
+section .responsibility-item,
+section .achievement-item,
+section .certificate-item {
+    background-color: #003366;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    flex: 1;
+}
+
+section .education-heading,
+section .project-heading-bubble,
+section .responsibility-heading,
+section .achievement-heading,
+section .design-heading-bubble,
+section .certificate-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-box {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-box:hover {
+    background-color: #3e8e41;
+  }
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list .skill {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+    flex: 1 1 calc(25% - 10px); /* Ensure 4 skills per row with some margin */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#contact_form {
+    /*background-color: darkblue ;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row label {
+    color: #FFFFFF; /* changed font color to cyan */
+    font-size: 18px; /* increased font size */
+    margin-left: 10px;
+}
+
+input[type=text], textarea {
+    text-align: center;
+    /*background-color: cyan*/ ;
+    border-radius: 10px;
+    margin: auto 0;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px #3e4444;
+}
+
+input[type=text] {
+    height: 35px; /* increased input field height */
+}
+
+input[type=submit] {
+    background-color: cyan;
+    color: #FFFFFF; /* changed font color to cyan */
+    font-size: 24px; /* increased font size */
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px #3e4444;
+}
+
+
+
+
+
+.home {
+    height: 100vh;
+    background: url('E:/portfolio-website/Purple Illustrated Mountain Desktop Wallpaper.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+  }
+  
+  .home-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .home-sci {
+    margin-bottom: 20px;
+  }
+  
+  .home-sci a {
+    margin: 0 10px;
+  }
+  
+  .btn-box {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-box:hover {
+    background-color: #3e8e41;
+  }
+.home-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #eef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081629;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081629;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+section .design-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .design-item {
+    background-color: #003366;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px); /* Four items per row with some margin */
+    box-sizing: border-box;
+    margin: 10px;
+    max-width: calc(25% - 20px); /* Optional: to ensure consistent width */
+}
+
+.design-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #0ef; /* Cyan accent line below the image */
+}
